@@ -14,11 +14,6 @@ int main() {
     // 'myBook' is an instance of the 'struct Book'
     struct Book myBook;
 
-    // 3. Use the struct by assigning values to its members
-    // Use strcpy for string members
-    strcpy(myBook.title, "The C Programming Language");
-    strcpy(myBook.author, "Kernighan & Ritchie");
-    //myBook.year = 1978;
 
     // 4. Access and print the member values
     printf("Title: %s\n", myBook.title);
