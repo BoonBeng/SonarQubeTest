@@ -13,12 +13,14 @@ int main() {
     // 2. Declare a variable of the struct type
     // 'myBook' is an instance of the 'struct Book'
     struct Book myBook;
-
+    int madeYear;
 
     // 4. Access and print the member values
     printf("Title: %s\n", myBook.title);
     printf("Author: %s\n", myBook.author);
     printf("Year Published: %d\n", myBook.year);
+
+    printf("Year Made: %d\n", madeYear);
 
     return 0;
 }
