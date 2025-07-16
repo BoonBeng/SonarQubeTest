@@ -9,7 +9,7 @@ struct Book {
     int year;
 };
 
-void fun(struct Book* myBook) {
+void fun(const struct Book* myBook) {
   if (0 < myBook->year) {  // Error: The right operand of '==' is a garbage value
     //do something
     printf("Year Published: %d\n", myBook->year);
