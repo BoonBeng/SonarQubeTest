@@ -9,6 +9,13 @@ struct Book {
     int year;
 };
 
+void fun(struct Book* myBook) {
+  if (0 < myBook->year) {  // Error: The right operand of '==' is a garbage value
+    //do something
+    printf("Year Published: %d\n", myBook->year);
+  }
+}   
+
 int main() {
     // 2. Declare a variable of the struct type
     // 'myBook' is an instance of the 'struct Book'
@@ -21,6 +28,8 @@ int main() {
     printf("Year Published: %d\n", myBook.year);
 
     printf("Year Made: %d\n", madeYear);
+
+    fun(&myBook);
 
     return 0;
 }
